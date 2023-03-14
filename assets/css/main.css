@@ -1,0 +1,171 @@
+:root {
+    font-size: 16px;
+
+    --darkblue: #030e21;
+}
+
+a,
+.nav-link,
+.navbar-brand {
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+a:not(.navbar-brand):not(.btn-primary):hover,
+a:not(.navbar-brand):not(.btn-primary):focus,
+.nav-link:focus,
+.nav-link:hover {
+    color: #ffffff;
+}
+
+a.navbar-brand:hover,
+a.navbar-brand:focus {
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: var(--darkblue);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #ffffff;
+    color: var(--darkblue) !important;
+}
+
+.navbar {
+    background-color: var(--darkblue);
+}
+
+.navbar a {
+    color: #ffffff;
+}
+
+.navbar a.active {
+    color: #ffffff !important;
+}
+
+.navbar-toggler {
+    background-color: #ffffff;
+}
+
+.banner {
+    margin-top: 87px;
+}
+
+.banner > div > div {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.banner .row > div:first-child img {
+    border-radius: 50%;
+    height: 20vh;
+    width: 20vh;
+}
+
+.banner .row > div:last-child {
+    height: 85vh;
+}
+
+.banner-img {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+}
+
+.about {
+    background-color: var(--darkblue);
+    color: #ffffff;
+}
+
+.about .row + .row p {
+    max-width: 70ch;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.portfolio img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.skills {
+    background-color: var(--darkblue);
+    color: #ffffff;
+}
+
+.experience-timeline ul {
+    border-left: 1px solid var(--darkblue);
+}
+
+.experience-timeline ul li {
+    list-style: none;
+    position: relative;
+}
+
+.experience-timeline ul li > i {
+    color: var(--darkblue);
+    position: absolute;
+    left: -40px;
+    top: 0
+}
+
+.experience-timeline > div {
+    max-width: 700px;
+}
+
+.footer {
+    background-color: var(--darkblue);
+}
+
+.footer h3,
+.footer a {
+    color: #ffffff;
+}
+
+.portfolio img {
+    object-fit: cover;
+    
+}
+@media screen and (min-width: 768px) {
+    .banner {
+        margin-top: 56px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .banner {
+        margin-top: 56px;
+    }
+
+    a:not(.navbar-brand):not(.btn-primary):hover,
+    a:not(.navbar-brand):not(.btn-primary):focus,
+    .nav-link:focus,
+    .nav-link:hover {
+        color: #ffffff;
+        transform: scale(1.1);
+    }
+
+    .portfolio img {
+        object-fit: contain;
+    }
+    .cover {
+        object-fit: cover !important;
+    }
+
+    .up-30 {
+        margin-top: -30px;
+    }
+
+    .up-50 {
+        margin-top: -50px;
+    }
+
+    .up-70 {
+        margin-top: -70px;
+    }
+}
